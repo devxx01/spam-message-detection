@@ -109,3 +109,6 @@ print('Recall score: {}\n'.format(recall_score(y_test,predictions, average='micr
 
 import pickle
 pickle.dump(naive_model, open('model.pkl','wb'))
+
+import joblib
+joblib.dump(vec, open('vectorizer.pickle','wb'))
