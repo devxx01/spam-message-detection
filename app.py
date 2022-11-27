@@ -1,25 +1,7 @@
-# # BUAT FRONTEND PAKE STREAMLIT DISINI
-# from sklearn.naive_bayes import MultinomialNB
-# naive_model = MultinomialNB()
 
-# from sklearn.feature_extraction.text import TfidfVectorizer
-# vec = TfidfVectorizer()
-
-
-# sms_message = [input("masukan SMS anda:")]
-
-# test = vec.transform(sms_message)
-
-# if naive_model.predict(test) == [0]:
-#   print('Bukan pesan spam')
-# else:
-#   print("AWAS PESAN SPAM!!")
-
-# BUAT FRONTEND PAKE STREAMLIT DISINI
 import streamlit as st
 from PIL import Image
-#from sklearn.naive_bayes import MultinomialNB
-# from sklearn.feature_extraction.text import TfidfVectorizer
+
 import joblib
 
 naive_model = joblib.load(open('model.pkl','rb'))
